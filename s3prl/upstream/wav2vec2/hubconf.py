@@ -78,3 +78,30 @@ def wav2vec2_xlsr(refresh=False, *args, **kwargs):
     """
     kwargs['ckpt'] = 'https://dl.fbaipublicfiles.com/fairseq/wav2vec/xlsr_53_56k.pt'
     return wav2vec2_url(refresh=refresh, *args, **kwargs)
+
+def wav2vec2_xlsr_300m(refresh=False, *args, **kwargs):
+    """
+        The Large model
+            refresh (bool): whether to download ckpt/config again if existed
+    """
+    kwargs['ckpt'] = 'https://dl.fbaipublicfiles.com/fairseq/wav2vec/xlsr2_300m.pt'
+    return wav2vec2_url(refresh=refresh, *args, **kwargs)
+
+
+def wav2vec2_xlsr_1b(refresh=False, *args, **kwargs):
+    """
+        The Large model
+            refresh (bool): whether to download ckpt/config again if existed
+    """
+    kwargs['ckpt'] = 'https://dl.fbaipublicfiles.com/fairseq/wav2vec/xlsr2_960m_1000k.pt'
+    return wav2vec2_url(refresh=refresh, *args, **kwargs)
+
+
+def wav2vec2_xlsr_2b(refresh=False, *args, **kwargs):
+    """
+        The Large model
+            refresh (bool): whether to download ckpt/config again if existed
+    """
+    kwargs['ckpt'] = 'https://dl.fbaipublicfiles.com/fairseq/wav2vec/xlsr2_2B_1000k.pt'
+    return wav2vec2_url(refresh=refresh, *args, **kwargs)
+
